@@ -26,8 +26,8 @@ const Products = () => {
       localStorage.setItem('cart', JSON.stringify(updatedCart));
       console.log('Item already in the cart. Quantity increased.');
     } else {
-      // Product doesn't exist in the cart, so add it with a quantity of 1
-      const updatedCart = [...cart, { ...product, quantity: 1 }];
+      // Product doesn't exist in the cart, so add it with desired quantity
+      const updatedCart = [...cart, { ...product, quantity: product.quantity }];
       setCart(updatedCart);
       localStorage.setItem('cart', JSON.stringify(updatedCart));
       console.log('Item added to the cart.');
