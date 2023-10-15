@@ -16,11 +16,9 @@ const Products = () => {
     const specificItem = cart.find(item => item.id === product.id);
   
     if (specificItem) {
-      // Object with the specific id was found
       const prevQuantity = specificItem.quantity;
       const updatedCart = cart.map(item => {
         if (item.id === specificItem.id) {
-          // Update the quantity of the specific item
           item.quantity = prevQuantity + product.quantity;
         }
         return item;
@@ -29,7 +27,6 @@ const Products = () => {
       localStorage.setItem('cart', JSON.stringify(updatedCart));
       console.log('Item already in the cart. Quantity increased.');
     } else {
-      // Product doesn't exist in the cart, so add it with desired quantity
       const updatedCart = [...cart, { ...product, quantity: product.quantity }];
       setCart(updatedCart);
       localStorage.setItem('cart', JSON.stringify(updatedCart));
@@ -51,10 +48,9 @@ const Products = () => {
   useEffect(() => {
     const fetchData = async () => {
         setProductData(jsonData)
-        // Add a "quantity" proper ty to each product
         const productsWithQuantity = jsonData.map((product) => ({
           ...product,
-          quantity: 1, // Set the initial quantity to 1 for each product
+          quantity: 1,
         }));
         setProductData(productsWithQuantity);
     };
