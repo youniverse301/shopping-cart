@@ -1,0 +1,153 @@
+#cartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+
+}
+
+#cartLabelContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 75vw;
+    height: fit-content;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+}
+
+#cartProductContainer {
+    display: flex;
+}
+
+.cartProduct{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;    
+    background-color: white;
+    grid-row-start: 2;
+    width: 75vw;
+}
+
+.cartProductImg {
+    height: 125px;
+    width: 125px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.cartProductName {
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.cartProductPrice {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+    padding-left: 25px;
+}
+
+#quantityDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+    border: 1px solid #ccc;
+  }
+  
+  #quantityDiv button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  
+  #quantityDiv span {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+    padding-bottom: 5px;
+  }
+
+  #itemTitle, #priceTitle, #quantityTitle, #totalTitle {
+    margin: 0;
+  }
+
+  #priceTitle {
+    grid-column-start: 3;
+    padding-left: 20px;
+  }
+
+  #cartLine {
+    height: 1px;
+    background-color: grey;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    margin-top: 5px;
+  }
+
+  #removeItem {
+    grid-column-start: 6;
+    display: flex;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #EFEFEF;
+    cursor: pointer;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+    font-size: .9rem;
+  }
+
+  #removeItem:hover {
+    background-color: #fdd47c;
+}
+
+  .productTotal {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+  }
+
+  #cartTitle {
+    padding-top: 115px;
+    text-align: center;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+    margin: 0;
+  }
+
+  #subTotalContainer {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    align-items: flex-end;
+    font-size: 1.4rem;
+    font-family: 'PlayFair-bold', 'Courier New', Courier, monospace;
+    padding-top: 25px;
+  }
+
+  #subTotalContainer > p {
+    margin: 0;
+  }
+
+  #checkoutBtn {
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    border-radius: 7px;
+    border: none;
+    background-color: #FEC037;
+    cursor: pointer;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+  }
+

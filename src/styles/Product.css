@@ -1,13 +1,132 @@
+body {
+    margin: 0;
+    display: flex;
+}
+
+#root {
+    width: 100vw;
+}
+
+#productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background-color: #F6F6F6;
+    gap: 20px;
+}
+
+#productsHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #F6F6F6;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    padding-left: 25px;
+    gap: 10px;
+}
+
+#productsHeader > h1 {
+    margin: 0;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+}
+  
+#categorySelect {
+    margin-right: 10px;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+  }
+
 .product{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 450px;
     width: 450px;
-    background-color: grey;
     justify-content: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 15px;
 }
-
 
 .productImg {
-    height: 250px;
-    width: 200px;
+    height: 200px;
+    width: 150px;
 }
+
+.productName {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0;
+}
+
+.productPrice {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+}
+
+#quantityDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+    border: 1px solid #ccc;
+  }
+  
+  #quantityDiv button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  
+  #quantityDiv span {
+    font-size: 18px;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+.atcBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FEC037;
+    color: black;
+    cursor: pointer;
+    font-family: 'PlayFair', 'Courier New', Courier, monospace;
+}
+
+.atcBtn:hover {
+    background-color: #fdd47c;
+}
+
+.atcBtn img {
+    height: 24px;
+    width: 24px;
+    margin-bottom: 2px;
+}
+
+select {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+    width: min-content;
+  }
+
+  #main {
+    margin-top: 75px;
+  }
