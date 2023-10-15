@@ -82,7 +82,7 @@ const Cart = () => {
         ))}
         <div id='subTotalContainer'>
             <p>Subtotal: ${calculateCartTotal()}</p>
-            <Link to="/" className="linkBtn" onClick={() => clearCart()} id='checkoutBtn'>Checkout</Link>
+            <Link to="/shopping-cart/" className="linkBtn" onClick={() => clearCart()} id='checkoutBtn'>Checkout</Link>
         </div>
       </div>
     </div>

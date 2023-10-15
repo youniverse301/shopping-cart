@@ -7,15 +7,15 @@ import Cart from "./componets/Cart";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/shopping-cart/",
     element: <App />,
   },
   {
-    path: "Products",
+    path: "/shopping-cart/Products",
     element: <Products />,
   },
   {
-    path: "/Cart",
+    path: "/shopping-cart/Cart",
     element: <Cart />,
   },
 ]);

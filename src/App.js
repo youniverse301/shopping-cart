@@ -15,7 +15,7 @@ function App() {
           a curated selection of high-quality, pre-loved items that won't break the bank.   
         </h2>
         <button id="shopNowBtn">
-          <Link to="/Products" className="linkBtn">Shop Now</Link>
+          <Link to="/shopping-cart/Products" className="linkBtn">Shop Now</Link>
         </button>
       </div>
       <img id="homeImage" src="https://images.pexels.com/photos/3768005/pexels-photo-3768005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>

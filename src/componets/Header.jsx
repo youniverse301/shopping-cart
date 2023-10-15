@@ -17,13 +17,13 @@ const Header = () => {
             <h1>Thrifty Threads</h1>
             <div id="headerBtns">
                 <button id="homeBtn">
-                    <Link to="/" className="linkBtn">Home</Link>
+                    <Link to="/shopping-cart/" className="linkBtn">Home</Link>
                 </button>
                 <button id="productsBtn">
-                    <Link to="/products" className="linkBtn">Products</Link>
+                    <Link to="/shopping-cart/products" className="linkBtn">Products</Link>
                 </button>
                 <button id="cartBtn">
-                    <Link to="/cart" className="linkBtn">
+                    <Link to="/shopping-cart/cart" className="linkBtn">
                         <img id="bagBtn" src={shoppingBagImage} />
                         {renderCartCircle}
                     </Link>
