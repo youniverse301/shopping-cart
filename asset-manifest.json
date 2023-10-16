@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.addb9091.css",
+    "main.js": "/shopping-cart/static/js/main.e1d2de99.js",
+    "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/shopping-cart/static/media/PlayfairDisplay-VariableFont_wght.20240034b80f50c3ad00.ttf",
+    "static/media/PlayfairDisplay-Italic-VariableFont_wght.ttf": "/shopping-cart/static/media/PlayfairDisplay-Italic-VariableFont_wght.2f795353f413479428d6.ttf",
+    "static/media/PlayfairDisplay-Bold.ttf": "/shopping-cart/static/media/PlayfairDisplay-Bold.c3c9165182044bf7f179.ttf",
+    "index.html": "/shopping-cart/index.html",
+    "main.addb9091.css.map": "/shopping-cart/static/css/main.addb9091.css.map",
+    "main.e1d2de99.js.map": "/shopping-cart/static/js/main.e1d2de99.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.addb9091.css",
+    "static/js/main.e1d2de99.js"
+  ]
+}
