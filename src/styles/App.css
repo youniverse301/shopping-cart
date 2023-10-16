@@ -17,11 +17,11 @@
 
 #appContainer {
     display: grid;
-    grid-template-rows: 104px 30% 1fr;
+    grid-template-rows: 104px auto auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; 
 }
 
 #homeTextContainer {
@@ -32,7 +32,6 @@
     text-align: center;
     align-items: center;
     width: 100vw;
-    flex: 1;
     margin-bottom: 20px;
 }
 
@@ -60,7 +59,7 @@
     z-index: -1;
     border: 5px solid #FEC037;
     flex: 1;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #shopNowBtn {
